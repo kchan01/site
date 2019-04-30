@@ -1,0 +1,53 @@
+img { /*formatting of the images themselves*/
+	width: 100%; /*setting height or width determines it's fit relative to the size of its available space outlined in item*/
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+.item { /*items that contains the images*/
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	width: 50%;
+	height: 680px;
+	text-align: center;
+	color: white;
+	z-index: 1;
+	margin-top: -5%;
+}
+
+
+b { /*text on body look */
+    display: block;
+    padding: 16px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 18;
+    text-decoration: none;
+    margin-left: 25%;
+    margin-right: 25%;
+	margin-top: 3%;
+}
+
+c { /* text of title */
+	display: block;
+	font-weight: bold;
+    color: white;
+	font-size: 28px;
+	font-style: italic;
+	padding: 16px;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: -1%;
+}
+
+#pictures .item { /*picture columns*/
+  width: 100%;
+}
+
+#pictures .row { /*picture row*/
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

@@ -1,0 +1,70 @@
+img { /*formatting of the images themselves*/
+	height: 100%; /*setting height or width determines it's fit relative to the size of its available space outlined in item*/
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.item { /*items that contains the images*/
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	height: 780px;
+	text-align: center;
+	color: white;
+	z-index: 1;
+	margin-top: 0px;
+}
+
+.centered {
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	font-size: 48px;
+	margin-left: 50%;
+	margin-top: 390px;
+	padding-top: 40%;
+	padding-bottom: 40%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(120,120,120,0.08);
+	opacity: 0.0;
+	z-index: 3;
+}
+
+#pictures {
+	margin-top: -3%;
+}
+
+#pictures .item { /*picture columns*/
+  width: 100%;
+}
+
+#pictures .row { /*picture row*/
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.centered:hover { /* hover over text */
+	opacity: 1.0;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+a { /*how the elements in the nav bars looks */
+    display: block;
+    padding: 21px;
+    box-sizing: border-box;
+    color: black;
+    font-weight: bold;
+    font-size: 18;
+    text-decoration: none;
+    opacity: 1.0;
+	z-index: 5;
+}
+
+a:hover { /* hover over elements in  navbars */
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.4s ease;
+}

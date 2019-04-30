@@ -1,0 +1,39 @@
+#pictures {
+	justify-content: center;
+	margin-left: 30%;
+	margin-right: 28%;
+}
+
+
+.item { /*items (in this case the images */
+	position: relative;
+	display: inline-block;
+	opacity: 0.88;
+	overflow: hidden;
+  	height: 160px;
+  	width: 160px;
+	margin-right: 5%;
+	margin-bottom: 10%;
+	top: 188px;
+}
+
+img { /*formatting of the images themselves*/
+	width: 100%;
+	top: 0px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.item:hover {
+	opacity: 1.0;
+	transition: 0.2s;
+}
+
+.text {
+	font-size: 28px;
+	color: white;
+	margin-left: 30%;
+	font-style: italic;
+	font-weight: bold;
+}

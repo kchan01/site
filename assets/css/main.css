@@ -1,0 +1,76 @@
+body { /* overall including background colors and fonts */
+    background: black;
+    padding-top: 90px; /* account for header height */
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav { /* nav bar at the top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, rgba(120,120,120,0), rgba(0,0,0,1.0)); /* black -> to top, rgba(120,120,120,0), rgba(0,0,0,1.0) // white -> to top, rgba(120,120,120,0), rgba(120,120,120,1.0)*/
+    height: 69px;
+    z-index: 100;
+}
+
+.barContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.barSide {
+    display: flex;
+    flex-direction: row;
+}
+
+.barTab:hover {
+    background-image: linear-gradient(to top, rgba(120,120,120,0), rgba(0,0,0,0.88));
+    transition: 0.4s;
+}
+
+#bot-bar { /* style / location of bottom navbar */
+    position: fixed;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    background: #B651DB;
+    height: 60px;
+}
+
+.bot-barContainer { /* allows the separation of the containers (left and right) */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bot-barLeft { /* organizes the three elements to the left and right of the bottom bar*/
+    display: flex;
+    flex-direction: row;
+}
+
+#name{
+	margin-bottom: 24px;
+}
+
+
+a { /*how the elements in the nav bars looks */
+    display: block;
+    padding: 19px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    font-size: 18;
+    text-decoration: none;
+    opacity: 0.78;
+}
+
+a:hover { /* hover over elements in  navbars */
+    color: white;
+    background color: rgba(120,120,120,1);
+    cursor: pointer;
+    opacity: 1.0;
+
+    transition: 0.4s ease;
+}

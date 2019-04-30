@@ -1,0 +1,85 @@
+img { /*formatting of the images themselves*/
+	width: 100%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#carousel-container {
+	position: absolute;
+	top: 42.8%; /* where the entire carousel orgiinates */
+	left: 50%; /*same as above comment */
+	z-index: 3;
+	transform: translate(-50%, -50%);
+	background-color: grey;
+
+	width: 1900px; /*what is the maximum view of the carousel's height & width.. essentially the window */
+	height: 1080px;
+	overflow: hidden;
+}
+
+#carousel-strip {
+	transition: 0.4s;
+
+	position: absolute;
+	left: 0px;
+	display: flex;
+}
+
+.carousel-section {
+
+	width: 1900px;
+	height: 1080px;
+	position: relative;
+}
+
+.carousel-section img { /*size of image for each carousel section / viewable window */
+	width: 1900px;
+}
+
+.left, .right {
+	position: absolute;
+	top: 48%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 3;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 16%;
+	padding-left: 16%;
+	font-size: 108px;
+	color: white;
+}
+
+.left {
+	left: calc(24% - 50vh);
+}
+
+.right {
+	right: calc(24% - 50vh);
+}
+
+.left:hover {
+	background-image: linear-gradient(to left, rgba(120,120,120,0), rgba(120,120,120,0.5));
+	transition: 0.4s;
+}
+
+.right:hover {
+	background-image: linear-gradient(to right, rgba(120,120,120,0), rgba(120,120,120,0.5));
+	transition: 0.4s;
+}
+c {
+	display: block;
+	font-weight: bold;
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+c:hover { /* hover over elements in  navbars */
+    color: white;
+    cursor: pointer;
+    opacity: 1.0;
+
+    transition: 0.4s ease;
+}
